@@ -22,6 +22,9 @@ public class MainActivity2 extends AppCompatActivity {
         myButton2 = findViewById(R.id.main2_button_2);
         myButton3 = findViewById(R.id.main2_button_3);
         myButton4 = findViewById(R.id.main2_button_4);
-
+        myButton1.setEnabled(false);
+        myButton2.setEnabled(false);
+        myButton3.setEnabled(false);
+        myButton4.setEnabled(false);
     }
 }
