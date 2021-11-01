@@ -15,7 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
     private Button myButton3;
     private Button myButton4;
     private String aaa;
-    private List<Double> sddsds;
+    private List<Double> sddsddss;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
