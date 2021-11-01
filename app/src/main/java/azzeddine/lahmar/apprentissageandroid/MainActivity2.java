@@ -6,12 +6,16 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity2 extends AppCompatActivity {
     private TextView myText;
     private Button myButton1;
     private Button myButton2;
     private Button myButton3;
     private Button myButton4;
+    private String aaa;
+    private List<Double> sddsds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
