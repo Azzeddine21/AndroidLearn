@@ -1,4 +1,4 @@
-package azzeddine.lahmar.apprentissageandroid;
+package azzeddine.lahmar.apprentissageandroid.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +11,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import azzeddine.lahmar.apprentissageandroid.R;
+import azzeddine.lahmar.apprentissageandroid.model.User;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView mySentance;
     private EditText myForm;
     private Button myButton;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
         myForm = findViewById(R.id.main_edittext_myEdit);
         myButton = findViewById(R.id.main_button_myButton);
 
-        myButton.setEnabled(false);
+
         myForm.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                myButton.setEnabled(false);
 
             }
 
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent changeActivity = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(changeActivity);
+                user.setFirstName(myForm.getText().toString());
 
             }
         });

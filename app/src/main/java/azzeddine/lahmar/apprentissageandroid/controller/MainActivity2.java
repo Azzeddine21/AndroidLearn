@@ -1,4 +1,4 @@
-package azzeddine.lahmar.apprentissageandroid;
+package azzeddine.lahmar.apprentissageandroid.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
+
+import azzeddine.lahmar.apprentissageandroid.R;
 
 public class MainActivity2 extends AppCompatActivity {
     private TextView myText;
